@@ -6,8 +6,10 @@ sys=`uname`
 
 case `uname` in
     Darwin)
+echo darwin
 	loader=dslite.sh
 	DSDIR=`echo /Applications/ti/uni*`
+	DSCONFIG="--config $HOME/msp430-m1/MSP430G2553.ccxml"
 	export PATH="$DSDIR:$PATH"
 	;;
     *)
@@ -37,7 +39,8 @@ case "$loader" in
 	;;
     dslite.sh)
 	set -x
-	dslite.sh --config /opt/ti/uniflash/MSP430G2553.ccxml -f $1
+echo "DSCONFIG=$DSCONFIG"
+	dslite.sh $DSCONFIG  -f $1
 	;;
 esac
 
