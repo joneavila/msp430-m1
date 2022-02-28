@@ -1,0 +1,3 @@
+DSDIR=`echo /Applications/ti/uni*`
+export PATH="~/bin:$DSDIR:$HOME/ti/msp430-gcc/bin/:$PATH"
+export MSP430_GCC_INCLUDE_DIR=$HOME/ti/msp430-gcc/include
