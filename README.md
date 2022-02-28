@@ -7,7 +7,8 @@ Instructions assume default download and install locations. Paths may change wit
 3. Follow these instructions to install homebrew. https://brew.sh/
 4. Use brew to install emacs bash and git
    $ brew install PACKAGE
-5. run our install script:  $ (cd ~/msp430-m1; bash install.sh)
+5. start interactive terminal on macos, then clone this repo using git and run our install script:  $ (cd ~/msp430-m1; bash install.sh)
+ 
 
 
 Be sure to run the msp430 tools from bash: $ bash
