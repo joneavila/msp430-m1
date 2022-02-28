@@ -4,10 +4,12 @@ Instructions assume default download and install locations. Paths may change wit
 
 1. Download [UniFlash installer for macOS](https://www.ti.com/tool/UNIFLASH#downloads). Double-click the disk image to mount it. Run the installer: `/Volumes/UniFlash/uniflash_sl.7.0.0.3615.app/Contents/MacOS/osx-x86_64`
 2. Download [MSP430 GCC all-in-one installer for macOS](https://www.ti.com/tool/MSP430-GCC-OPENSOURCE#downloads). Run the installer: `sudo ~/Downloads/msp430-gcc-full-osx-installer-9.3.1.2.app/Contents/MacOS/osx-x86_64`
-3. Add the compiler to PATH: `export PATH="$HOME/ti/msp430-gcc/bin/:$PATH"`/
-4. Add the header files to MSP430_GCC_INCLUDE_DIR: `export MSP430_GCC_INCLUDE_DIR=$HOME/ti/msp430-gcc/include`
-5. Clone the [arch1-project2 repository](https://github.com/robustUTEP/arch1-project2).
-6. Copy `MSP430G2553.ccxm` to the project root.
-7. From the project root, build the demo programs and timer library: `make -C demos`
-8. Then load the LED demo: `/Applications/ti/uniflash_7.0.0/dslite.sh --config MSP430G2553.ccxml -f ./demos/1-led/led.elf`
-9. Press the reset button. Done!
+3. Follow these instructions to install homebrew. https://brew.sh/
+4. Use brew to install emacs bash and git
+   $ brew install PACKAGE
+5. run our install script:  $ (cd ~/msp430-m1; bash install.sh)
+
+
+Be sure to run the msp430 tools from bash: $ bash
+
+You can exit bash with the exit command $ exit
